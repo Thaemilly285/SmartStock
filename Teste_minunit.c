@@ -37,3 +37,14 @@ int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v){
 	return 1;
 }
 
+
+int regGastos(char *pdt, int cate_g, float preco, int qtde_g){
+	if(cate_g != 1 && cate_g != 2){
+		return 0;
+	}
+	if(preco < 0 || qtde_g <= 0){
+		return 0;
+	}
+	
+	return 1;
+}
