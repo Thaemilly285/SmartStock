@@ -10,9 +10,13 @@ MU_TEST(regvenda_valida){
 	mu_assert(regVendas("Camiseta", 1, 50, 2)==1, "Venda deveria ser valida");
 }
 
+MU_TEST(regvenda_invalida){
+	mu_assert(regVendas("Saia", 1, -10, 1)==0, "Venda deveria ser invalida");
+}
 
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
+	MU_RUN_TEST(regvenda_invalida);
 }
 
 int main(){
