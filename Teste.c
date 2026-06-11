@@ -21,10 +21,15 @@ MU_TEST(reggastos_valido){
 	mu_assert(regGastos("Regata", 1, 30, 3)==1, "Gasto deveria ser valido");
 }
 
+MU_TEST(reggastos_invalido){
+	mu_assert(regGastos("Esmalte", 3, 15, 2)==0, "Gasto deveria ser invalido");
+}
+
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
 	MU_RUN_TEST(regvenda_invalida);
 	MU_RUN_TEST(reggastos_valido);
+	MU_RUN_TEST(reggastos_invalido);
 }
 
 int main(){
