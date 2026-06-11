@@ -37,7 +37,19 @@ int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v){
 	return 1;
 }
 
-
+/**
+ * @brief Realiza o registro de gastos com base nos dados de compras.
+ * * @param pdt Nome do produto ou item comprado.
+ * @param cate_g Categoria do gasto (1 para Roupas, 2 para Cosméticos).
+ * @param preco Preço unitário do produto (deve ser maior ou igual a zero).
+ * @param qtde_g Quantidade comprada (deve ser um valor inteiro maior que zero).
+ * @return int Retorna 1 se o registro for válido; retorna 0 se um ou mais parâmetros forem inválidos.
+ *
+ * @note
+ * - O parâmetro @p cate_g aceita apenas os valores 1 (Roupa) ou 2 (Cosmético).
+ * - O parâmetro @p preco aceita números decimais positivos ou zero. Valores negativos tornam o gasto inválido.
+ * - O parâmetro @p qtde_g aceita apenas inteiros maiores que zero. Valores menores ou iguais a zero tornam o gasto inválido.
+ */
 int regGastos(char *pdt, int cate_g, float preco, int qtde_g){
 	if(cate_g != 1 && cate_g != 2){
 		return 0;
