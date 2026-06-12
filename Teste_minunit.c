@@ -12,6 +12,9 @@ que realiza o registro de gastos e vendas, calcula lucros e exibe relatórios det
 *
 */
 
+
+//Registro de Vendas//
+
 /**
 * @brief Realiza o registro de vendas com base nos dados do produto
 * 
@@ -36,6 +39,9 @@ int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v){
 	
 	return 1;
 }
+
+
+//Registro de Gastos//
 
 /**
  * @brief Realiza o registro de gastos com base nos dados de compras.
@@ -64,6 +70,8 @@ int regGastos(char *pdt, int cate_g, float preco, int qtde_g){
 
 
 
+//Calculo de Gastos//
+
 /**
  * @brief Realiza o calculo de gastos com base no preço e na quantidade da compras.
  * @param preco Preço unitário do produto (deve ser maior ou igual a zero).
@@ -81,8 +89,21 @@ float calcularGastos(float preco, int qtde_g){
 	return preco * qtde_g;
 }
 
-//
 
+
+
+//Calculo de Vendas//
+
+/**
+ * @brief Realiza o calculo de vendas com base no preço e na quantidade das vendas.
+ * @param preco Preço unitário do produto (deve ser maior ou igual a zero).
+ * @param qtde_g Quantidade vendida (deve ser um valor inteiro maior que zero).
+ * @return float retorna o resultado da multiplicação do preço e da quantidade da venda.
+ *
+ * @note
+ * - O parâmetro @p preco aceita números decimais positivos ou zero. Valores negativos tornam a venda inválido.
+ * - O parâmetro @p qtde_g aceita apenas inteiros maiores que zero. Valores menores ou iguais a zero tornam a venda inválido.
+ */
 float calcularVendas(float valor, int qtde_v){
 	if(valor < 0 || qtde_v <= 0){
 		return NAN;
