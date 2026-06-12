@@ -62,6 +62,18 @@ int regGastos(char *pdt, int cate_g, float preco, int qtde_g){
 }
 
 
+
+
+/**
+ * @brief Realiza o calculo de gastos com base no preço e na quantidade da compras.
+ * @param preco Preço unitário do produto (deve ser maior ou igual a zero).
+ * @param qtde_g Quantidade comprada (deve ser um valor inteiro maior que zero).
+ * @return float retorna o resultado da multiplicação do preço e da quantidade da compra.
+ *
+ * @note
+ * - O parâmetro @p preco aceita números decimais positivos ou zero. Valores negativos tornam o gasto inválido.
+ * - O parâmetro @p qtde_g aceita apenas inteiros maiores que zero. Valores menores ou iguais a zero tornam o gasto inválido.
+ */
 float calcularGastos(float preco, int qtde_g){
 	if(preco < 0 || qtde_g <= 0){
 		return NAN;
