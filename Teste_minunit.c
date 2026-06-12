@@ -80,3 +80,12 @@ float calcularGastos(float preco, int qtde_g){
 	}
 	return preco * qtde_g;
 }
+
+//
+
+float calcularVendas(float valor, int qtde_v){
+	if(valor < 0 || qtde_v <= 0){
+		return NAN;
+	}
+	return valor * qtde_v;
+}

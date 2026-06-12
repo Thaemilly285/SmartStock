@@ -43,6 +43,10 @@ MU_TEST(gasto_invalida){
 	mu_assert(isnan(calcularGastos(-15, 2)), "Compras negativas devera retornar NAN");
 }
 
+//Calcular Venda//
+
+
+
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
 	MU_RUN_TEST(regvenda_invalida);
