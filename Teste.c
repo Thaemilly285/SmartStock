@@ -57,6 +57,10 @@ MU_TEST(venda_precoZero){
 	mu_assert(calcularVendas(0, 3)==0, "O preco deveria ser zero");
 }
 
+MU_TEST(venda_invalida){
+	mu_assert(isnan(calcularVendas(-25, 3)), "Vendas negativas devera retornar NAN");
+}
+
 
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
@@ -70,6 +74,7 @@ MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(venda_valida);
 	MU_RUN_TEST(venda_qtdeZero);
 	MU_RUN_TEST(venda_precoZero);
+	MU_RUN_TEST(venda_invalida);
 }
 
 int main(){
