@@ -4,6 +4,7 @@
 
 int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v);
 int regGastos(char *pdt_g, int cate_g, float preco, int qtde_g);
+float calcularGastos(float preco, int qtde_c);
 
 //Registro de Vendas//
 
@@ -25,11 +26,24 @@ MU_TEST(reggastos_invalido){
 	mu_assert(regGastos("Esmalte", 3, 15, 2)==0, "Gasto deveria ser invalido");
 }
 
+//Calcular Gastos//
+MU_TEST(gasto_valido){
+	mu_assert(calcularGastos(150, 5)== 750, "Falha nos gastos");
+}
+
+MU_TEST(gasto_qtdeZero){
+	mu_assert(isnan(calcularGastos(70, 0)), "Gastos com quantidade zero deveria retornar NAN");
+}
+
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
 	MU_RUN_TEST(regvenda_invalida);
 	MU_RUN_TEST(reggastos_valido);
 	MU_RUN_TEST(reggastos_invalido);
+	MU_RUN_TEST(gasto_valido);
+	MU_RUN_TEST(gasto_qtdeZero);
+	MU_RUN_TEST(gasto_precoZero);
+	MU_RUN_TEST(gasto_invalida);
 }
 
 int main(){

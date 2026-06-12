@@ -1,15 +1,15 @@
-# Project: SmartStock
+# Project: Teste_SmartStock
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = MENU.o sistema.o
-LINKOBJ  = MENU.o sistema.o
+OBJ      = Teste_minunit.o Teste.o
+LINKOBJ  = Teste_minunit.o Teste.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = SmartStock.exe
+BIN      = Teste_SmartStock.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,8 +24,8 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-MENU.o: MENU.c
-	$(CC) -c MENU.c -o MENU.o $(CFLAGS)
+Teste_minunit.o: Teste_minunit.c
+	$(CC) -c Teste_minunit.c -o Teste_minunit.o $(CFLAGS)
 
-sistema.o: sistema.c
-	$(CC) -c sistema.c -o sistema.o $(CFLAGS)
+Teste.o: Teste.c
+	$(CC) -c Teste.c -o Teste.o $(CFLAGS)

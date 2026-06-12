@@ -60,3 +60,11 @@ int regGastos(char *pdt, int cate_g, float preco, int qtde_g){
 	
 	return 1;
 }
+
+
+float calcularGastos(float preco, int qtde_g){
+	if(preco < 0 || qtde_g <= 0){
+		return NAN;
+	}
+	return preco * qtde_g;
+}
