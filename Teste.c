@@ -45,6 +45,9 @@ MU_TEST(gasto_invalida){
 
 //Calcular Venda//
 
+MU_TEST(venda_valida){
+	mu_assert(calcularVendas(30, 2)== 60, "Falha nas vendas");
+}
 
 
 MU_TEST_SUITE(teste_suite){
@@ -56,6 +59,7 @@ MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(gasto_qtdeZero);
 	MU_RUN_TEST(gasto_precoZero);
 	MU_RUN_TEST(gasto_invalida);
+	MU_RUN_TEST(venda_valida);
 }
 
 int main(){
