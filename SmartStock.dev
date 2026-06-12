@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=..\SmartStock\MENU.c
+FileName=MENU.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=..\SmartStock\sistema.h
+FileName=sistema.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=..\SmartStock\sistema.c
+FileName=sistema.h
 CompileCpp=0
 Folder=
 Compile=1
