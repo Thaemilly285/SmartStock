@@ -39,6 +39,10 @@ MU_TEST(gasto_precoZero){
 	mu_assert(calcularGastos(0, 10)==0, "O preco deveria ser zero");
 }
 
+MU_TEST(gasto_invalida){
+	mu_assert(isnan(calcularGastos(-15, 2)), "Compras negativas devera retornar NAN");
+}
+
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
 	MU_RUN_TEST(regvenda_invalida);
