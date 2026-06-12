@@ -49,6 +49,10 @@ MU_TEST(venda_valida){
 	mu_assert(calcularVendas(30, 2)== 60, "Falha nas vendas");
 }
 
+MU_TEST(venda_qtdeZero){
+	mu_assert(isnan(calcularVendas(90, 0)), "Vendas com quantidade zero deveria retornar NAN");
+}
+
 
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
@@ -60,6 +64,7 @@ MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(gasto_precoZero);
 	MU_RUN_TEST(gasto_invalida);
 	MU_RUN_TEST(venda_valida);
+	MU_RUN_TEST(venda_qtdeZero);
 }
 
 int main(){
