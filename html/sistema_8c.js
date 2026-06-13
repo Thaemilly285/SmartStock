@@ -1,0 +1,25 @@
+var sistema_8c =
+[
+    [ "calcularGastos", "sistema_8c.html#ae33cf1edb080ea19f3e2667eb3b5507f", null ],
+    [ "calcularLucro", "sistema_8c.html#ad8335f58d1b6a2669e21e1ca145e927f", null ],
+    [ "calcularVendas", "sistema_8c.html#a00b5f0d5efb403676b556f87d9c94735", null ],
+    [ "regGastos", "sistema_8c.html#a3440ac0de8f7a38a832946e61de1dccd", null ],
+    [ "regVendas", "sistema_8c.html#a44fb4723b1bef871f77ee0fce2ec4c6d", null ],
+    [ "relaGastos", "sistema_8c.html#a85eb10fe64656d1c87f27b2eda7aeb11", null ],
+    [ "relaGeral", "sistema_8c.html#ab45ff89f974b4d17aaecf6f61d8b0949", null ],
+    [ "relaLucro", "sistema_8c.html#a2a8eff1174a498deb0082c712c400437", null ],
+    [ "relaVendas", "sistema_8c.html#a0c6bcdd97d2055900254a3b210a93a6e", null ],
+    [ "cate_g", "sistema_8c.html#ac3d532ce5aac46b0d83c8a22a75beae2", null ],
+    [ "cate_v", "sistema_8c.html#ad1572fc0589d726d9f980509d2e74bf1", null ],
+    [ "gastos", "sistema_8c.html#a13bbfe8ee3244fda8a1fff394d2cf83e", null ],
+    [ "lucro", "sistema_8c.html#addfe8dd87f79f9112ea7d156df44a152", null ],
+    [ "pdt", "sistema_8c.html#a58d65e55e15a6a574a6814872f3ec2bc", null ],
+    [ "pdt_v", "sistema_8c.html#a2b651d99e06cf2f1deaacd0a66be5e6d", null ],
+    [ "preco", "sistema_8c.html#aa1c92c0589388d02b458b8bf78d1e142", null ],
+    [ "qtde_g", "sistema_8c.html#a9f26b4cb44a2393f9af62f15ba0cc2da", null ],
+    [ "qtde_gastos", "sistema_8c.html#aaa7f1b563a334425a649087b53c80d2c", null ],
+    [ "qtde_v", "sistema_8c.html#aabd18b32170b541f51cae1c2c3745006", null ],
+    [ "qtde_vendas", "sistema_8c.html#a96f44793cb46f9542d0e6c159e0db4c8", null ],
+    [ "valor", "sistema_8c.html#ae7c98bbe3d4d4f564170f33c6ae94655", null ],
+    [ "vendas", "sistema_8c.html#a9cd16d61a33e0078708f3d97cf41d391", null ]
+];

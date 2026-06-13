@@ -1,6 +1,18 @@
 #include <stdio.h>
+/**
+ * @file sistema.c
+ * @brief Implementacao das rotinas de interface, relatorios e calculos do sistema financeiro.
+ * @author Thaemilly Vitoria, Mariana Cecilia, Maria Fernanda, Otavio Cavalheiro
+ * @date 2026
+ * @version 1.0
+ */
+ 
 #include "sistema.h"
 #include <math.h>
+
+
+ 
+//Variáveis Globais
 
 int qtde_g[MAX],cate_g[MAX];
 char pdt[MAX][30];
@@ -16,6 +28,9 @@ int qtde_gastos;
 float lucro = 0; 
 float vendas = 0;
 float gastos = 0;
+
+
+//Cálculos
 
 float calcularLucro(float vendas, float gastos){
 	return vendas - gastos;
@@ -34,6 +49,9 @@ float calcularVendas(float valor, int qtde_v){
 	}
 	return valor * qtde_v;
 }
+
+
+//Registros
 
 void regGastos(){
 	int i;
@@ -118,6 +136,9 @@ void regVendas(){
 	}
 	printf("\nVenda(s) Registrada(s) com Sucesso!!\n");						    
 }
+
+
+//Relatórios 
 
 void relaLucro(){
 	lucro = calcularLucro(vendas, gastos);

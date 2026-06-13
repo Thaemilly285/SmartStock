@@ -1,0 +1,187 @@
+\doxysection{Teste\+\_\+minunit.\+c File Reference}
+\hypertarget{_teste__minunit_8c}{}\label{_teste__minunit_8c}\index{Teste\_minunit.c@{Teste\_minunit.c}}
+
+
+Biblioteca de comandos de um sistema de registro financeiro.  
+
+
+{\ttfamily \+\#include $<$math.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{_teste__minunit_8c_ab67c7725ba6597afff5c513c73ad7280}{reg\+Vendas}} (char \texorpdfstring{$\ast$}{*}pdt\+\_\+v, int cate\+\_\+v, float valor, int qtde\+\_\+v)
+\begin{DoxyCompactList}\small\item\em Realiza o registro de vendas com base nos dados do produto. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{_teste__minunit_8c_a817603359ada79c389910b86579d9f8d}{reg\+Gastos}} (char \texorpdfstring{$\ast$}{*}pdt, int cate\+\_\+g, float preco, int qtde\+\_\+g)
+\begin{DoxyCompactList}\small\item\em Realiza o registro de gastos com base nos dados de compras. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{_teste__minunit_8c_ae33cf1edb080ea19f3e2667eb3b5507f}{calcular\+Gastos}} (float preco, int qtde\+\_\+g)
+\begin{DoxyCompactList}\small\item\em Realiza o calculo de gastos com base no preco e na quantidade da compras. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{_teste__minunit_8c_a00b5f0d5efb403676b556f87d9c94735}{calcular\+Vendas}} (float valor, int qtde\+\_\+v)
+\begin{DoxyCompactList}\small\item\em Realiza o calculo de vendas com base no preco e na quantidade das vendas. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{_teste__minunit_8c_ad8335f58d1b6a2669e21e1ca145e927f}{calcular\+Lucro}} (float vendas, float gastos)
+\begin{DoxyCompactList}\small\item\em Realiza o calculo de lucro com base nas vendas e nos gastos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Biblioteca de comandos de um sistema de registro financeiro. 
+
+Este arquivo contem as funcoes de um sistema que auxilia no gerenciamento financeiro, realizando o registro de gastos e vendas, calculo de lucros e validacoes. \begin{DoxyAuthor}{Author}
+Thaemilly Vitoria, Mariana Cecilia, Maria Fernanda e Otavio Cavalheiro 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2026 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{_teste__minunit_8c_doc-func-members}
+\Hypertarget{_teste__minunit_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_teste__minunit_8c_ae33cf1edb080ea19f3e2667eb3b5507f}\index{Teste\_minunit.c@{Teste\_minunit.c}!calcularGastos@{calcularGastos}}
+\index{calcularGastos@{calcularGastos}!Teste\_minunit.c@{Teste\_minunit.c}}
+\doxysubsubsection{\texorpdfstring{calcularGastos()}{calcularGastos()}}
+{\footnotesize\ttfamily \label{_teste__minunit_8c_ae33cf1edb080ea19f3e2667eb3b5507f} 
+float calcular\+Gastos (\begin{DoxyParamCaption}\item[{float}]{preco}{, }\item[{int}]{qtde\+\_\+g}{}\end{DoxyParamCaption})}
+
+
+
+Realiza o calculo de gastos com base no preco e na quantidade da compras. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preco} & Preco unitario do produto (deve ser maior ou igual a zero). \\
+\hline
+{\em qtde\+\_\+g} & Quantidade comprada (deve ser um valor inteiro maior que zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float retorna o resultado da multiplicacao do preco e da quantidade da compra. ~\newline
+
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O parametro {\ttfamily preco} aceita numeros decimais e inteiros positivos ou zero. Valores negativos tornam o gasto invalido.
+\item O parametro {\ttfamily qtde\+\_\+g} aceita apenas numeros inteiros maiores que zero. Valores menores ou iguais a zero tornam o gasto invalido. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\Hypertarget{_teste__minunit_8c_ad8335f58d1b6a2669e21e1ca145e927f}\index{Teste\_minunit.c@{Teste\_minunit.c}!calcularLucro@{calcularLucro}}
+\index{calcularLucro@{calcularLucro}!Teste\_minunit.c@{Teste\_minunit.c}}
+\doxysubsubsection{\texorpdfstring{calcularLucro()}{calcularLucro()}}
+{\footnotesize\ttfamily \label{_teste__minunit_8c_ad8335f58d1b6a2669e21e1ca145e927f} 
+float calcular\+Lucro (\begin{DoxyParamCaption}\item[{float}]{vendas}{, }\item[{float}]{gastos}{}\end{DoxyParamCaption})}
+
+
+
+Realiza o calculo de lucro com base nas vendas e nos gastos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendas} & Valor total dos produtos vendidos. \\
+\hline
+{\em gastos} & Valor total dos produtos comprados pela loja. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float retorna o resultado da subtracao das vendas pelos gastos.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O parametro {\ttfamily vendas} aceita numeros decimais e inteiros positivos ou zero. Valores negativos tornam a venda invalida.
+\item O parametro {\ttfamily gastos} aceita numeros decimais e inteiros positivos ou zero. Valores negativos tornam o gasto invalido.
+\item O retorno pode ser um numero negativo, o que significa que houve prejuizo. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\Hypertarget{_teste__minunit_8c_a00b5f0d5efb403676b556f87d9c94735}\index{Teste\_minunit.c@{Teste\_minunit.c}!calcularVendas@{calcularVendas}}
+\index{calcularVendas@{calcularVendas}!Teste\_minunit.c@{Teste\_minunit.c}}
+\doxysubsubsection{\texorpdfstring{calcularVendas()}{calcularVendas()}}
+{\footnotesize\ttfamily \label{_teste__minunit_8c_a00b5f0d5efb403676b556f87d9c94735} 
+float calcular\+Vendas (\begin{DoxyParamCaption}\item[{float}]{valor}{, }\item[{int}]{qtde\+\_\+v}{}\end{DoxyParamCaption})}
+
+
+
+Realiza o calculo de vendas com base no preco e na quantidade das vendas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Preco unitario do produto (deve ser maior ou igual a zero). \\
+\hline
+{\em qtde\+\_\+v} & Quantidade vendida (deve ser um valor inteiro maior que zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float retorna o resultado da multiplicacao do preco e da quantidade da venda.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O parametro {\ttfamily valor} aceita numeros decimais e inteiros positivos ou zero. Valores negativos tornam a venda invalida.
+\item O parametro {\ttfamily qtde\+\_\+v} aceita apenas numeros inteiros maiores que zero. Valores menores ou iguais a zero tornam a venda invalida. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\Hypertarget{_teste__minunit_8c_a817603359ada79c389910b86579d9f8d}\index{Teste\_minunit.c@{Teste\_minunit.c}!regGastos@{regGastos}}
+\index{regGastos@{regGastos}!Teste\_minunit.c@{Teste\_minunit.c}}
+\doxysubsubsection{\texorpdfstring{regGastos()}{regGastos()}}
+{\footnotesize\ttfamily \label{_teste__minunit_8c_a817603359ada79c389910b86579d9f8d} 
+int reg\+Gastos (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{pdt}{, }\item[{int}]{cate\+\_\+g}{, }\item[{float}]{preco}{, }\item[{int}]{qtde\+\_\+g}{}\end{DoxyParamCaption})}
+
+
+
+Realiza o registro de gastos com base nos dados de compras. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pdt} & Nome do produto ou item comprado. \\
+\hline
+{\em cate\+\_\+g} & Categoria do gasto (1 para Roupas, 2 para Cosmeticos). \\
+\hline
+{\em preco} & Preco unitario do produto (deve ser maior ou igual a zero). \\
+\hline
+{\em qtde\+\_\+g} & Quantidade comprada (deve ser um valor inteiro maior que zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna 1 se o registro for valido, retorna 0 se um ou mais parametros forem invalidos.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O parametro {\ttfamily cate\+\_\+g} aceita apenas os valores 1 (Roupa) ou 2 (Cosmetico).
+\item O parametro {\ttfamily preco} aceita numeros decimais e inteiros positivos ou zero. Valores negativos tornam o gasto invalido.
+\item O parametro {\ttfamily qtde\+\_\+g} aceita apenas inteiros maiores que zero. Valores menores ou iguais a zero tornam o gasto invalido. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\Hypertarget{_teste__minunit_8c_ab67c7725ba6597afff5c513c73ad7280}\index{Teste\_minunit.c@{Teste\_minunit.c}!regVendas@{regVendas}}
+\index{regVendas@{regVendas}!Teste\_minunit.c@{Teste\_minunit.c}}
+\doxysubsubsection{\texorpdfstring{regVendas()}{regVendas()}}
+{\footnotesize\ttfamily \label{_teste__minunit_8c_ab67c7725ba6597afff5c513c73ad7280} 
+int reg\+Vendas (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{pdt\+\_\+v}{, }\item[{int}]{cate\+\_\+v}{, }\item[{float}]{valor}{, }\item[{int}]{qtde\+\_\+v}{}\end{DoxyParamCaption})}
+
+
+
+Realiza o registro de vendas com base nos dados do produto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pdt\+\_\+v} & Nome do produto a ser registrado. \\
+\hline
+{\em cate\+\_\+v} & Categoria do produto (1 para Roupas, 2 para Cosmetico). \\
+\hline
+{\em valor} & Preco unitario do produto (deve ser maior ou igual a zero) \\
+\hline
+{\em qtde\+\_\+v} & Quantidade vendida (deve ser um valor inteiro maior que zero) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna 1 se o registro for valido, retorna 0 se um ou mais parametros forem invalidos
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O parametro {\ttfamily cate\+\_\+v} aceita apenas os valores 1 (Roupa) ou 2 (Cosmetico).
+\item O parametro {\ttfamily valor} aceita apenas numeros decimais e inteiros positivos ou zero. Valores negativos tornam a venda invalida.
+\item O parametro {\ttfamily qtde\+\_\+v} aceita apenas numeros inteiros maiores que zero. Valores menores ou igual a zero tornam a venda invalida. 
+\end{DoxyItemize}
+\end{DoxyNote}

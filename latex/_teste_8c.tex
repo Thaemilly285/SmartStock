@@ -1,0 +1,241 @@
+\doxysection{Teste.\+c File Reference}
+\hypertarget{_teste_8c}{}\label{_teste_8c}\index{Teste.c@{Teste.c}}
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include "{}minunit.\+h"{}}\newline
+{\ttfamily \+\#include $<$math.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{_teste_8c_ab67c7725ba6597afff5c513c73ad7280}{reg\+Vendas}} (char \texorpdfstring{$\ast$}{*}pdt\+\_\+v, int cate\+\_\+v, float valor, int qtde\+\_\+v)
+\begin{DoxyCompactList}\small\item\em Realiza o registro de vendas com base nos dados do produto. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{_teste_8c_ac670c50ee4cfc92a13033254527a5913}{reg\+Gastos}} (char \texorpdfstring{$\ast$}{*}pdt\+\_\+g, int cate\+\_\+g, float preco, int qtde\+\_\+g)
+\begin{DoxyCompactList}\small\item\em Realiza o registro de gastos com base nos dados de compras. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{_teste_8c_a25ff68617d39525f12112c31f9c54762}{calcular\+Gastos}} (float preco, int qtde\+\_\+c)
+\item 
+float \doxymbox{\hyperlink{_teste_8c_a00b5f0d5efb403676b556f87d9c94735}{calcular\+Vendas}} (float valor, int qtde\+\_\+v)
+\item 
+float \doxymbox{\hyperlink{_teste_8c_ad8335f58d1b6a2669e21e1ca145e927f}{calcular\+Lucro}} (float vendas, float gastos)
+\item 
+\doxymbox{\hyperlink{_teste_8c_af40afcd25f76f430c5c24ddb9a6c740c}{MU\+\_\+\+TEST}} (regvenda\+\_\+valida)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a72c27ad6db27501edbef7534bba73415}{MU\+\_\+\+TEST}} (regvenda\+\_\+invalida)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a2a4b27d19517b29d6f31011d1cd5b720}{MU\+\_\+\+TEST}} (reggastos\+\_\+valido)
+\item 
+\doxymbox{\hyperlink{_teste_8c_ad4a2dfac7fa32c612f8c68444e1be61d}{MU\+\_\+\+TEST}} (reggastos\+\_\+invalido)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a3b1f0ab0ecd0a1a14676d2cba77cd8b5}{MU\+\_\+\+TEST}} (gasto\+\_\+valido)
+\item 
+\doxymbox{\hyperlink{_teste_8c_acfb0aa7df09e1798ea9067ebc345fbf4}{MU\+\_\+\+TEST}} (gasto\+\_\+qtde\+Zero)
+\item 
+\doxymbox{\hyperlink{_teste_8c_ac4ec103417a16b20955897c954fec740}{MU\+\_\+\+TEST}} (gasto\+\_\+preco\+Zero)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a9572aa50496f54479cb050922249a470}{MU\+\_\+\+TEST}} (gasto\+\_\+invalido)
+\item 
+\doxymbox{\hyperlink{_teste_8c_acad09e9921aa55bce080bc1759b3a2bd}{MU\+\_\+\+TEST}} (venda\+\_\+valida)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a20fe92eecb842aef9083340ee49cb776}{MU\+\_\+\+TEST}} (venda\+\_\+qtde\+Zero)
+\item 
+\doxymbox{\hyperlink{_teste_8c_afd78952ed9e8d86049958aa8c7e61dfd}{MU\+\_\+\+TEST}} (venda\+\_\+preco\+Zero)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a71dc53e69361495c701a1c7c2c34247a}{MU\+\_\+\+TEST}} (venda\+\_\+invalida)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a522c4e46c47793e14b163c1fa18b0263}{MU\+\_\+\+TEST}} (lucro\+\_\+valido)
+\item 
+\doxymbox{\hyperlink{_teste_8c_adad9cd3ce1f25f21a3d48a6a265c1da4}{MU\+\_\+\+TEST}} (lucro\+\_\+zero)
+\item 
+\doxymbox{\hyperlink{_teste_8c_aac6caf150ccf64e6b95ded5a6d4c0337}{MU\+\_\+\+TEST}} (lucro\+\_\+prejuizo)
+\item 
+\doxymbox{\hyperlink{_teste_8c_a2f093aa9a6933b60da9651de479e2c50}{MU\+\_\+\+TEST\+\_\+\+SUITE}} (teste\+\_\+suite)
+\item 
+int \doxymbox{\hyperlink{_teste_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\label{_teste_8c_doc-func-members}
+\Hypertarget{_teste_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_teste_8c_a25ff68617d39525f12112c31f9c54762}\index{Teste.c@{Teste.c}!calcularGastos@{calcularGastos}}
+\index{calcularGastos@{calcularGastos}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{calcularGastos()}{calcularGastos()}}
+{\footnotesize\ttfamily \label{_teste_8c_a25ff68617d39525f12112c31f9c54762} 
+float calcular\+Gastos (\begin{DoxyParamCaption}\item[{float}]{preco}{, }\item[{int}]{qtde\+\_\+c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_ad8335f58d1b6a2669e21e1ca145e927f}\index{Teste.c@{Teste.c}!calcularLucro@{calcularLucro}}
+\index{calcularLucro@{calcularLucro}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{calcularLucro()}{calcularLucro()}}
+{\footnotesize\ttfamily \label{_teste_8c_ad8335f58d1b6a2669e21e1ca145e927f} 
+float calcular\+Lucro (\begin{DoxyParamCaption}\item[{float}]{vendas}{, }\item[{float}]{gastos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a00b5f0d5efb403676b556f87d9c94735}\index{Teste.c@{Teste.c}!calcularVendas@{calcularVendas}}
+\index{calcularVendas@{calcularVendas}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{calcularVendas()}{calcularVendas()}}
+{\footnotesize\ttfamily \label{_teste_8c_a00b5f0d5efb403676b556f87d9c94735} 
+float calcular\+Vendas (\begin{DoxyParamCaption}\item[{float}]{valor}{, }\item[{int}]{qtde\+\_\+v}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{Teste.c@{Teste.c}!main@{main}}
+\index{main@{main}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_teste_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a9572aa50496f54479cb050922249a470}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_a9572aa50496f54479cb050922249a470} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{gasto\+\_\+invalido}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_ac4ec103417a16b20955897c954fec740}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_ac4ec103417a16b20955897c954fec740} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{gasto\+\_\+preco\+Zero}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_acfb0aa7df09e1798ea9067ebc345fbf4}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_acfb0aa7df09e1798ea9067ebc345fbf4} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{gasto\+\_\+qtde\+Zero}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a3b1f0ab0ecd0a1a14676d2cba77cd8b5}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_a3b1f0ab0ecd0a1a14676d2cba77cd8b5} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{gasto\+\_\+valido}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_aac6caf150ccf64e6b95ded5a6d4c0337}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_aac6caf150ccf64e6b95ded5a6d4c0337} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{lucro\+\_\+prejuizo}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a522c4e46c47793e14b163c1fa18b0263}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_a522c4e46c47793e14b163c1fa18b0263} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{lucro\+\_\+valido}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_adad9cd3ce1f25f21a3d48a6a265c1da4}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_adad9cd3ce1f25f21a3d48a6a265c1da4} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{lucro\+\_\+zero}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_ad4a2dfac7fa32c612f8c68444e1be61d}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_ad4a2dfac7fa32c612f8c68444e1be61d} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{reggastos\+\_\+invalido}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a2a4b27d19517b29d6f31011d1cd5b720}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_a2a4b27d19517b29d6f31011d1cd5b720} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{reggastos\+\_\+valido}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a72c27ad6db27501edbef7534bba73415}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_a72c27ad6db27501edbef7534bba73415} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{regvenda\+\_\+invalida}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_af40afcd25f76f430c5c24ddb9a6c740c}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_af40afcd25f76f430c5c24ddb9a6c740c} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{regvenda\+\_\+valida}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a71dc53e69361495c701a1c7c2c34247a}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_a71dc53e69361495c701a1c7c2c34247a} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{venda\+\_\+invalida}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_afd78952ed9e8d86049958aa8c7e61dfd}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_afd78952ed9e8d86049958aa8c7e61dfd} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{venda\+\_\+preco\+Zero}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a20fe92eecb842aef9083340ee49cb776}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [14/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_a20fe92eecb842aef9083340ee49cb776} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{venda\+\_\+qtde\+Zero}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_acad09e9921aa55bce080bc1759b3a2bd}\index{Teste.c@{Teste.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [15/15]}}
+{\footnotesize\ttfamily \label{_teste_8c_acad09e9921aa55bce080bc1759b3a2bd} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{venda\+\_\+valida}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_a2f093aa9a6933b60da9651de479e2c50}\index{Teste.c@{Teste.c}!MU\_TEST\_SUITE@{MU\_TEST\_SUITE}}
+\index{MU\_TEST\_SUITE@{MU\_TEST\_SUITE}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST\_SUITE()}{MU\_TEST\_SUITE()}}
+{\footnotesize\ttfamily \label{_teste_8c_a2f093aa9a6933b60da9651de479e2c50} 
+MU\+\_\+\+TEST\+\_\+\+SUITE (\begin{DoxyParamCaption}\item[{teste\+\_\+suite}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_teste_8c_ac670c50ee4cfc92a13033254527a5913}\index{Teste.c@{Teste.c}!regGastos@{regGastos}}
+\index{regGastos@{regGastos}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{regGastos()}{regGastos()}}
+{\footnotesize\ttfamily \label{_teste_8c_ac670c50ee4cfc92a13033254527a5913} 
+int reg\+Gastos (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{pdt}{, }\item[{int}]{cate\+\_\+g}{, }\item[{float}]{preco}{, }\item[{int}]{qtde\+\_\+g}{}\end{DoxyParamCaption})}
+
+
+
+Realiza o registro de gastos com base nos dados de compras. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pdt} & Nome do produto ou item comprado. \\
+\hline
+{\em cate\+\_\+g} & Categoria do gasto (1 para Roupas, 2 para Cosmeticos). \\
+\hline
+{\em preco} & Preco unitario do produto (deve ser maior ou igual a zero). \\
+\hline
+{\em qtde\+\_\+g} & Quantidade comprada (deve ser um valor inteiro maior que zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna 1 se o registro for valido, retorna 0 se um ou mais parametros forem invalidos.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O parametro {\ttfamily cate\+\_\+g} aceita apenas os valores 1 (Roupa) ou 2 (Cosmetico).
+\item O parametro {\ttfamily preco} aceita numeros decimais e inteiros positivos ou zero. Valores negativos tornam o gasto invalido.
+\item O parametro {\ttfamily qtde\+\_\+g} aceita apenas inteiros maiores que zero. Valores menores ou iguais a zero tornam o gasto invalido. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\Hypertarget{_teste_8c_ab67c7725ba6597afff5c513c73ad7280}\index{Teste.c@{Teste.c}!regVendas@{regVendas}}
+\index{regVendas@{regVendas}!Teste.c@{Teste.c}}
+\doxysubsubsection{\texorpdfstring{regVendas()}{regVendas()}}
+{\footnotesize\ttfamily \label{_teste_8c_ab67c7725ba6597afff5c513c73ad7280} 
+int reg\+Vendas (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{pdt\+\_\+v}{, }\item[{int}]{cate\+\_\+v}{, }\item[{float}]{valor}{, }\item[{int}]{qtde\+\_\+v}{}\end{DoxyParamCaption})}
+
+
+
+Realiza o registro de vendas com base nos dados do produto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pdt\+\_\+v} & Nome do produto a ser registrado. \\
+\hline
+{\em cate\+\_\+v} & Categoria do produto (1 para Roupas, 2 para Cosmetico). \\
+\hline
+{\em valor} & Preco unitario do produto (deve ser maior ou igual a zero) \\
+\hline
+{\em qtde\+\_\+v} & Quantidade vendida (deve ser um valor inteiro maior que zero) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna 1 se o registro for valido, retorna 0 se um ou mais parametros forem invalidos
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O parametro {\ttfamily cate\+\_\+v} aceita apenas os valores 1 (Roupa) ou 2 (Cosmetico).
+\item O parametro {\ttfamily valor} aceita apenas numeros decimais e inteiros positivos ou zero. Valores negativos tornam a venda invalida.
+\item O parametro {\ttfamily qtde\+\_\+v} aceita apenas numeros inteiros maiores que zero. Valores menores ou igual a zero tornam a venda invalida. 
+\end{DoxyItemize}
+\end{DoxyNote}

@@ -1,0 +1,117 @@
+\doxysection{sistema.\+h File Reference}
+\hypertarget{sistema_8h}{}\label{sistema_8h}\index{sistema.h@{sistema.h}}
+
+
+Prototipos das funcoes e relatorios do sistema financeiro.  
+
+
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{sistema_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}~100
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{sistema_8h_a5df50ae4214f0cea3315f5a99953b6ac}{reg\+Compras}} ()
+\item 
+void \doxymbox{\hyperlink{sistema_8h_a44fb4723b1bef871f77ee0fce2ec4c6d}{reg\+Vendas}} ()
+\item 
+void \doxymbox{\hyperlink{sistema_8h_a2a8eff1174a498deb0082c712c400437}{rela\+Lucro}} ()
+\item 
+void \doxymbox{\hyperlink{sistema_8h_a85eb10fe64656d1c87f27b2eda7aeb11}{rela\+Gastos}} ()
+\item 
+void \doxymbox{\hyperlink{sistema_8h_a0c6bcdd97d2055900254a3b210a93a6e}{rela\+Vendas}} ()
+\item 
+void \doxymbox{\hyperlink{sistema_8h_ab45ff89f974b4d17aaecf6f61d8b0949}{rela\+Geral}} ()
+\item 
+float \doxymbox{\hyperlink{sistema_8h_ad8335f58d1b6a2669e21e1ca145e927f}{calcular\+Lucro}} (float vendas, float gastos)
+\item 
+float \doxymbox{\hyperlink{sistema_8h_ae33cf1edb080ea19f3e2667eb3b5507f}{calcular\+Gastos}} (float preco, int qtde\+\_\+g)
+\item 
+float \doxymbox{\hyperlink{sistema_8h_a9883b2f361827092b6c136f9e7895f22}{calcular\+Vendas}} (float preco, int qtde\+\_\+v)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prototipos das funcoes e relatorios do sistema financeiro. 
+
+\begin{DoxyAuthor}{Author}
+Thaemilly Vitoria, Mariana Cecilia, Maria Fernanda, Otavio Cavalheiro 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2026 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{sistema_8h_doc-define-members}
+\Hypertarget{sistema_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{sistema_8h_a392fb874e547e582e9c66a08a1f23326}\index{sistema.h@{sistema.h}!MAX@{MAX}}
+\index{MAX@{MAX}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \label{sistema_8h_a392fb874e547e582e9c66a08a1f23326} 
+\+\#define MAX~100}
+
+
+
+\label{sistema_8h_doc-func-members}
+\Hypertarget{sistema_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{sistema_8h_ae33cf1edb080ea19f3e2667eb3b5507f}\index{sistema.h@{sistema.h}!calcularGastos@{calcularGastos}}
+\index{calcularGastos@{calcularGastos}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{calcularGastos()}{calcularGastos()}}
+{\footnotesize\ttfamily \label{sistema_8h_ae33cf1edb080ea19f3e2667eb3b5507f} 
+float calcular\+Gastos (\begin{DoxyParamCaption}\item[{float}]{preco}{, }\item[{int}]{qtde\+\_\+g}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_ad8335f58d1b6a2669e21e1ca145e927f}\index{sistema.h@{sistema.h}!calcularLucro@{calcularLucro}}
+\index{calcularLucro@{calcularLucro}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{calcularLucro()}{calcularLucro()}}
+{\footnotesize\ttfamily \label{sistema_8h_ad8335f58d1b6a2669e21e1ca145e927f} 
+float calcular\+Lucro (\begin{DoxyParamCaption}\item[{float}]{vendas}{, }\item[{float}]{gastos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_a9883b2f361827092b6c136f9e7895f22}\index{sistema.h@{sistema.h}!calcularVendas@{calcularVendas}}
+\index{calcularVendas@{calcularVendas}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{calcularVendas()}{calcularVendas()}}
+{\footnotesize\ttfamily \label{sistema_8h_a9883b2f361827092b6c136f9e7895f22} 
+float calcular\+Vendas (\begin{DoxyParamCaption}\item[{float}]{preco}{, }\item[{int}]{qtde\+\_\+v}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_a5df50ae4214f0cea3315f5a99953b6ac}\index{sistema.h@{sistema.h}!regCompras@{regCompras}}
+\index{regCompras@{regCompras}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{regCompras()}{regCompras()}}
+{\footnotesize\ttfamily \label{sistema_8h_a5df50ae4214f0cea3315f5a99953b6ac} 
+void reg\+Compras (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_a44fb4723b1bef871f77ee0fce2ec4c6d}\index{sistema.h@{sistema.h}!regVendas@{regVendas}}
+\index{regVendas@{regVendas}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{regVendas()}{regVendas()}}
+{\footnotesize\ttfamily \label{sistema_8h_a44fb4723b1bef871f77ee0fce2ec4c6d} 
+void reg\+Vendas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_a85eb10fe64656d1c87f27b2eda7aeb11}\index{sistema.h@{sistema.h}!relaGastos@{relaGastos}}
+\index{relaGastos@{relaGastos}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{relaGastos()}{relaGastos()}}
+{\footnotesize\ttfamily \label{sistema_8h_a85eb10fe64656d1c87f27b2eda7aeb11} 
+void rela\+Gastos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_ab45ff89f974b4d17aaecf6f61d8b0949}\index{sistema.h@{sistema.h}!relaGeral@{relaGeral}}
+\index{relaGeral@{relaGeral}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{relaGeral()}{relaGeral()}}
+{\footnotesize\ttfamily \label{sistema_8h_ab45ff89f974b4d17aaecf6f61d8b0949} 
+void rela\+Geral (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_a2a8eff1174a498deb0082c712c400437}\index{sistema.h@{sistema.h}!relaLucro@{relaLucro}}
+\index{relaLucro@{relaLucro}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{relaLucro()}{relaLucro()}}
+{\footnotesize\ttfamily \label{sistema_8h_a2a8eff1174a498deb0082c712c400437} 
+void rela\+Lucro (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sistema_8h_a0c6bcdd97d2055900254a3b210a93a6e}\index{sistema.h@{sistema.h}!relaVendas@{relaVendas}}
+\index{relaVendas@{relaVendas}!sistema.h@{sistema.h}}
+\doxysubsubsection{\texorpdfstring{relaVendas()}{relaVendas()}}
+{\footnotesize\ttfamily \label{sistema_8h_a0c6bcdd97d2055900254a3b210a93a6e} 
+void rela\+Vendas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
