@@ -110,3 +110,8 @@ float calcularVendas(float valor, int qtde_v){
 	}
 	return valor * qtde_v;
 }
+
+float calcularLucro(float vendas, float gastos){
+	return vendas - gastos;
+}
+

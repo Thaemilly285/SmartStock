@@ -5,6 +5,8 @@
 int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v);
 int regGastos(char *pdt_g, int cate_g, float preco, int qtde_g);
 float calcularGastos(float preco, int qtde_c);
+float calcularLucro(float vendas, float compras);
+
 
 //Registro de Vendas//
 
@@ -61,6 +63,12 @@ MU_TEST(venda_invalida){
 	mu_assert(isnan(calcularVendas(-25, 3)), "Vendas negativas devera retornar NAN");
 }
 
+//Calcular Lucro//
+
+MU_TEST(lucro_valido){
+	mu_assert(calcularLucro(100, 60)==40, "Falha no lucro");
+}
+
 
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
@@ -75,6 +83,7 @@ MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(venda_qtdeZero);
 	MU_RUN_TEST(venda_precoZero);
 	MU_RUN_TEST(venda_invalida);
+	MU_RUN_TEST(lucro_valido);
 }
 
 int main(){
