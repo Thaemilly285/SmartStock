@@ -73,6 +73,9 @@ MU_TEST(lucro_zero){
 	mu_assert(calcularLucro(50, 50)==0, "Lucro deveria ser zero");
 }
 
+MU_TEST(lucro_prejuizo){
+	mu_assert(calcularLucro(30, 50)==-20, "Lucro deveria ser negativo");
+}
 
 MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(regvenda_valida);
@@ -89,6 +92,7 @@ MU_TEST_SUITE(teste_suite){
 	MU_RUN_TEST(venda_invalida);
 	MU_RUN_TEST(lucro_valido);
 	MU_RUN_TEST(lucro_zero);
+	MU_RUN_TEST(lucro_prejuizo);
 }
 
 int main(){
