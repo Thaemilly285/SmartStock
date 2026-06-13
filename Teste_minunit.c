@@ -111,6 +111,18 @@ float calcularVendas(float valor, int qtde_v){
 	return valor * qtde_v;
 }
 
+//Calculo de Lucro//
+
+/**
+ * @brief Realiza o calculo de lucro com base nas vendas e nos gastos.
+ * @param vendas Valor total dos produtos vendidos.
+ * @param gastos Valor total dos produtos comprados pela loja.
+ * @return float retorna o resultado da subtração das vendas pelos gastos.
+ *
+ * @note
+ * - O parâmetro @p vendas aceita números decimais positivos ou zero. Valores negativos tornam a venda inválido.
+ * - O parâmetro @p gastos aceita números decimais positivos ou zero. Valores menores tornam o gasto inválido.
+ */
 float calcularLucro(float vendas, float gastos){
 	return vendas - gastos;
 }
