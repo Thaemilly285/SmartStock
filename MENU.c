@@ -1,99 +1,63 @@
+/**
+ * @file MENU.c
+ * @brief Construcao do menu interativo e controle do fluxo do usuario.
+ * @author Thaemilly Vitoria, Mariana Cecilia, Maria Fernanda, Otavio Cavalheiro
+ * @date 2026
+ * @version 1.0
+ */
+
 #include <stdio.h>
 #include "sistema.h"
 
-int main(){
-	
-	int op;
-	
-	do{
-		printf("\n--- MENU ---\n");
-		printf("1 - Registrar\n");
-		printf("2 - Relatorios\n");
-		printf("3 - Sair do Programa\n");
-		printf("Opcao: "); scanf("%d", &op);
-		
-		switch(op){
-			
-			case 1:{
-				int c;
-				do{
-					printf("\n-- Registrar --\n");
-			        printf("1 - Gastos\n");
-			        printf("2 - Vendas\n");
-			        printf("3- Sair do Programa\n");
-			        printf("Opcao: "); scanf("%d", &c);
-			        
-			        switch(c){
-			        	case 1:{
-			        		regGastos();
-							break;
-						}
-						case 2:{
-							regVendas();
-							break;
-						}
-						case 3:{
-							printf("Saindo...\n");
-							break;
-						}
-						default:{
-							printf("Opcao Invalida...\n");
-							break;
-						}
-					}
-				}while(c != 3);
-				break;
-			}
-			case 2:{
-				int cate;
-				do{
-					printf("\n-- Gerar Relatórios --\n");
-					printf("1 - Gastos\n");
-			        printf("2 - Vendas\n");
-			        printf("3 - Lucros\n");
-			        printf("4 - Geral\n");
-			        printf("5 - Sair\n");
-			        printf("Relatorio: "); scanf("%d", &cate);
-			        
-			        switch(cate){
-			        	case 1:{
-			        		relaGastos();
-							break;
-						}
-						case 2:{
-							relaVendas();
-							break;
-						}
-						case 3:{
-							relaLucro();
-							break;
-						}
-						case 4:{
-							relaGeral();
-							break;
-						}
-						case 5:{
-							printf("Saindo...\n");
-							break;
-						}
-						default:{
-							printf("Relatorio Invalido...");
-							break;
-						}
-					}
-				}while(cate != 5);
-				break;
-			}
-			case 3:{
-				printf("Encerrando programa...\n");
-				break;
-			}
-			default:{
-				printf("Opcao Invalida...\n");
-				break;
-			}
-		}
-	}while(op != 3);
-	
-	return 0;
+void exibirMenu() {
+    int opcao;
+
+    do {
+    	system("cls");
+        printf("\n======= SISTEMA FINANCEIRO =======");
+        printf("\n1. Registrar Vendas");
+        printf("\n2. Registrar Gastos");
+        printf("\n3. Relatorio de Vendas");
+        printf("\n4. Relatorio de Gastos");
+        printf("\n5. Relatorio de Lucro");
+        printf("\n6. Relatorio Geral");
+        printf("\n0. Sair");
+        printf("\n==================================");
+        printf("\nEscolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                regVendas();
+                system("pause");
+                break;
+            case 2:
+                regGastos();
+                system("pause");
+                break;
+            case 3:
+                relaVendas();
+                system("pause");
+                break;
+            case 4:
+                relaGastos();
+                system("pause");
+                break;
+            case 5:
+                relaLucro();
+                system("pause");
+                break;
+            case 6:
+                relaGeral();
+                system("pause");
+                break;
+            case 0:
+                printf("\nSaindo do sistema... Ate logo!\n");
+                system("pause");
+                break;
+            default:
+                printf("\nOpcao invalida! Tente novamente.\n");
+                system("pause");
+        }
+    } while (opcao != 0);
 }

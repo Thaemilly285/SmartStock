@@ -1,8 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
+/**
+ * @file main.c
+ * @brief Ponto de entrada principal do sistema financeiro.
+ * @author Thaemilly Vitoria, Mariana Cecilia, Maria Fernanda, Otavio Cavalheiro
+ * @date 2026
+ * @version 1.0
+ */
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+#include "sistema.h"
 
-int main(int argc, char *argv[]) {
-	return 0;
+// Protótipo da função do menu (caso ela não esteja no sistema.h)
+void exibirMenu(); 
+
+int main() {
+    exibirMenu();
+    return 0;
 }
