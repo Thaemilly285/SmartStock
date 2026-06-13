@@ -6,7 +6,7 @@
 *
 * @details Este arquivo contém funções de um sistema que auxilia no gerenciamento financeiro 
 que realiza o registro de gastos e vendas, calcula lucros e exibe relatórios detalhados.
-* @author Thaemilly
+* @author Thaemilly Vitória, Mariana Cecilia, Maria Fernanda e Otávio Cavalheiro
 * @date 2026
 * @version 1.0
 *
@@ -17,7 +17,6 @@ que realiza o registro de gastos e vendas, calcula lucros e exibe relatórios det
 
 /**
 * @brief Realiza o registro de vendas com base nos dados do produto
-* 
 * @param pdt_v Nome do produto a ser registrado.
 * @param cate_v Categoria do produto (1 para Roupas, 2 para Cosmético).
 * @param valor Preço unitário do produto (deve ser maior ou igual a zero)
@@ -26,7 +25,7 @@ que realiza o registro de gastos e vendas, calcula lucros e exibe relatórios det
 *
 * @note
 * - O parâmetro @p cate_v aceita apenas os valores 1 (Roupa) ou 2 (Cosmético).
-* - O parâmetro @p valor aceita apenas números decimas e inteiros positivos ou zero. Valores negativos tornam a venda inválida.
+* - O parâmetro @p valor aceita apenas números decimais e inteiros positivos ou zero. Valores negativos tornam a venda inválida.
 * - O parâmetro @p qtde_v aceita apenas números inteiros maiores que zero. Valores menores ou igual a zero tornam a venda inválida.
 */
 int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v){
@@ -45,7 +44,7 @@ int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v){
 
 /**
  * @brief Realiza o registro de gastos com base nos dados de compras.
- * * @param pdt Nome do produto ou item comprado.
+ * @param pdt Nome do produto ou item comprado.
  * @param cate_g Categoria do gasto (1 para Roupas, 2 para Cosméticos).
  * @param preco Preço unitário do produto (deve ser maior ou igual a zero).
  * @param qtde_g Quantidade comprada (deve ser um valor inteiro maior que zero).
@@ -96,8 +95,8 @@ float calcularGastos(float preco, int qtde_g){
 
 /**
  * @brief Realiza o calculo de vendas com base no preço e na quantidade das vendas.
- * @param preco Preço unitário do produto (deve ser maior ou igual a zero).
- * @param qtde_g Quantidade vendida (deve ser um valor inteiro maior que zero).
+ * @param valor Preço unitário do produto (deve ser maior ou igual a zero).
+ * @param qtde_v Quantidade vendida (deve ser um valor inteiro maior que zero).
  * @return float retorna o resultado da multiplicação do preço e da quantidade da venda.
  *
  * @note
@@ -120,8 +119,9 @@ float calcularVendas(float valor, int qtde_v){
  * @return float retorna o resultado da subtração das vendas pelos gastos.
  *
  * @note
- * - O parâmetro @p vendas aceita números decimais positivos ou zero. Valores negativos tornam a venda inválido.
- * - O parâmetro @p gastos aceita números decimais positivos ou zero. Valores menores tornam o gasto inválido.
+ * - O parâmetro @p vendas aceita números decimais e inteiros positivos ou zero. Valores negativos tornam a venda inválido.
+ * - O parâmetro @p gastos aceita números decimais e inteiros positivos ou zero. Valores negativos tornam o gasto inválido.
+ * - O return pode ser um número negativo, que significa que houve um prejuízo.
  */
 float calcularLucro(float vendas, float gastos){
 	return vendas - gastos;
