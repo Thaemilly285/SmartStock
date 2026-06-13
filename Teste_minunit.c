@@ -39,7 +39,6 @@ int regVendas(char *pdt_v, int cate_v, float valor, int qtde_v){
 	return 1;
 }
 
-
 //Registro de Gastos//
 
 /**
@@ -66,9 +65,6 @@ int regGastos(char *pdt, int cate_g, float preco, int qtde_g){
 	return 1;
 }
 
-
-
-
 //Calculo de Gastos//
 
 /**
@@ -76,10 +72,6 @@ int regGastos(char *pdt, int cate_g, float preco, int qtde_g){
  * @param preco Preço unitário do produto (deve ser maior ou igual a zero).
  * @param qtde_g Quantidade comprada (deve ser um valor inteiro maior que zero).
  * @return float retorna o resultado da multiplicação do preço e da quantidade da compra.
- *
- * @note
- * - O parâmetro @p preco aceita números decimais positivos ou zero. Valores negativos tornam o gasto inválido.
- * - O parâmetro @p qtde_g aceita apenas inteiros maiores que zero. Valores menores ou iguais a zero tornam o gasto inválido.
  */
 float calcularGastos(float preco, int qtde_g){
 	if(preco < 0 || qtde_g <= 0){
@@ -88,9 +80,6 @@ float calcularGastos(float preco, int qtde_g){
 	return preco * qtde_g;
 }
 
-
-
-
 //Calculo de Vendas//
 
 /**
@@ -98,11 +87,7 @@ float calcularGastos(float preco, int qtde_g){
  * @param valor Preço unitário do produto (deve ser maior ou igual a zero).
  * @param qtde_v Quantidade vendida (deve ser um valor inteiro maior que zero).
  * @return float retorna o resultado da multiplicação do preço e da quantidade da venda.
- *
- * @note
- * - O parâmetro @p preco aceita números decimais positivos ou zero. Valores negativos tornam a venda inválido.
- * - O parâmetro @p qtde_g aceita apenas inteiros maiores que zero. Valores menores ou iguais a zero tornam a venda inválido.
- */
+*/
 float calcularVendas(float valor, int qtde_v){
 	if(valor < 0 || qtde_v <= 0){
 		return NAN;
@@ -117,12 +102,7 @@ float calcularVendas(float valor, int qtde_v){
  * @param vendas Valor total dos produtos vendidos.
  * @param gastos Valor total dos produtos comprados pela loja.
  * @return float retorna o resultado da subtração das vendas pelos gastos.
- *
- * @note
- * - O parâmetro @p vendas aceita números decimais e inteiros positivos ou zero. Valores negativos tornam a venda inválido.
- * - O parâmetro @p gastos aceita números decimais e inteiros positivos ou zero. Valores negativos tornam o gasto inválido.
- * - O return pode ser um número negativo, que significa que houve um prejuízo.
- */
+*/
 float calcularLucro(float vendas, float gastos){
 	return vendas - gastos;
 }
