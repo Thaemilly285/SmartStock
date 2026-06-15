@@ -2,19 +2,16 @@
 Order=0,1,2
 Focused=1
 [Editor_1]
-<<<<<<< HEAD
-CursorCol=16
-CursorRow=4
-=======
+CursorCol=21
+CursorRow=107
 CursorCol=3
 CursorRow=9
->>>>>>> documentação
 TopLine=1
 LeftChar=1
 [Editor_0]
-CursorCol=23
-CursorRow=45
-TopLine=41
+CursorCol=1
+CursorRow=50
+TopLine=50
 LeftChar=1
 [Editor_2]
 CursorCol=1

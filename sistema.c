@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 /**
  * @file sistema.c
  * @brief Implementacao das rotinas de interface, relatorios e calculos do sistema financeiro.
@@ -6,7 +6,8 @@
  * @date 2026
  * @version 1.0
  */
- 
+
+#include <stdio.h>
 #include "sistema.h"
 #include <math.h>
 

@@ -11,7 +11,10 @@
 #define MAX 100
 
  
- 
+//Menu
+
+void exibirMenu();
+
 //Registros
 
 void regCompras();

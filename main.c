@@ -8,8 +8,6 @@
 
 #include "sistema.h"
 
-// Protótipo da função do menu (caso ela não esteja no sistema.h)
-void exibirMenu(); 
 
 int main() {
     exibirMenu();
