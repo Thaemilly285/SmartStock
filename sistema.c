@@ -23,8 +23,8 @@ int qtde_v[MAX], cate_v[MAX];
 char pdt_v[MAX][30];
 float valor[MAX];
 	
-int qtde_vendas;
-int qtde_gastos;
+int qtde_vendas = 0;
+int qtde_gastos = 0;
 	
 float lucro = 0; 
 float vendas = 0;
@@ -102,7 +102,7 @@ void regVendas(){
 	printf("\n--- Registro de Vendas ---\n");
 	printf("Quantidade de Vendas: "); scanf("%d", &qtde_vendas);
 	if(qtde_vendas <= 0){
-	    printf("Quantidade Inválida\n");
+	    printf("Quantidade Invalida\n");
 		return;
 	}
 	for(i = 0; i < qtde_vendas; i++){
@@ -142,39 +142,55 @@ void regVendas(){
 //Relatórios 
 
 void relaLucro(){
-	lucro = calcularLucro(vendas, gastos);
-	if(lucro == 0)
-	   printf("Nao houve Lucro e nem Prejuizo\n");
-	else if(lucro < 0)
+	if(qtde_vendas == 0 && qtde_gastos == 0){
+		printf("Nenhum gasto e venda registrados!\n");
+	}
+	else{
+		lucro = calcularLucro(vendas, gastos);
+	    if(lucro == 0)
+	       printf("Nao houve Lucro e nem Prejuizo\n");
+	    else if(lucro < 0)
 	        printf("Houve Prejuizo de %.2f\n", -lucro);
-	else
-	printf("\nLucros: %.2f\n", lucro);
+	        else
+	        printf("\nLucros: %.2f\n", lucro);
+	    }
 }
 
 void relaGastos(){
 	int i;
-	printf("\n--- Relatorio de Gasto ---\n");
-	for(i = 0; i < qtde_gastos; i++){
-		printf("\n-- Gasto %d --\n", i + 1);
-		printf("Produto: %s\n", pdt[i]);
-		printf("Categoria: %d\n", cate_g[i]);
-		printf("Preco: R$:%.2f\n", preco[i]);
-		printf("Quantidade: %d\n", qtde_g[i]);
+	if(qtde_gastos == 0){
+		printf("Nenhum gasto registrado!\n");
 	}
-	printf("TOTAL GASTOS: R$:%.2f\n", gastos);
+	else{
+		printf("\n--- Relatorio de Gasto ---\n");
+	    for(i = 0; i < qtde_gastos; i++){
+		    printf("\n-- Gasto %d --\n", i + 1);
+		    printf("Produto: %s\n", pdt[i]);
+		    printf("Categoria: %d\n", cate_g[i]);
+		    printf("Preco: R$:%.2f\n", preco[i]);
+		    printf("Quantidade: %d\n", qtde_g[i]);
+	    }
+	    printf("TOTAL GASTOS: R$:%.2f\n", gastos);
+	}
+	
 }
 
 void relaVendas(){
 	int i;
-	printf("\n--- Relatorio de Vendas ---\n");
-	for(i = 0; i < qtde_vendas; i++){
-		printf("\n-- Vendas %d --\n", i +1);
-		printf("Produto: %s", pdt_v[i]);
-		printf("Categoria: %d\n", cate_v[i]);
-		printf("Preco: R$:%.2f\n", valor[i]);
-		printf("Quantidade: %d\n", qtde_v[i]);
-	}						
-	printf("TOTAL VENDAS: R$:%.2f\n", vendas);
+	if(qtde_vendas == 0){
+		printf("Nenhuma venda registrada!\n");
+	}
+	else{
+		printf("\n--- Relatorio de Vendas ---\n");
+	    for(i = 0; i < qtde_vendas; i++){
+		    printf("\n-- Vendas %d --\n", i +1);
+		    printf("Produto: %s\n", pdt_v[i]);
+		    printf("Categoria: %d\n", cate_v[i]);
+		    printf("Preco: R$:%.2f\n", valor[i]);
+		    printf("Quantidade: %d\n", qtde_v[i]);
+	    }						
+	    printf("TOTAL VENDAS: R$:%.2f\n", vendas);
+	}
 }
 
 void relaGeral(){
