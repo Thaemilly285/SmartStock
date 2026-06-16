@@ -16,17 +16,17 @@ MU_TEST(regvenda_valida){
 }
 
 MU_TEST(regvenda_invalida){
-	mu_assert(regVendas("Saia", 1, -10, 1)==0, "Venda deveria ser invalida");
+	mu_assert(regVendas("Saia", 1, -10, 1)==0, "Preco negativo deveria ser invalida");
 }
 
 //Registro de Gastos//
 
 MU_TEST(reggastos_valido){
-	mu_assert(regGastos("Regata", 1, 30, 3)==1, "Gasto deveria ser valido");
+	mu_assert(regGastos("Regata", 5, 30, 3)==1, "Gasto deveria ser valido");
 }
 
 MU_TEST(reggastos_invalido){
-	mu_assert(regGastos("Esmalte", 3, 15, 2)==0, "Gasto deveria ser invalido");
+	mu_assert(regGastos("Esmalte", 3, 15, 2)==0, "Categoria deveria ser invalido");
 }
 
 //Calcular Gastos//
@@ -43,7 +43,7 @@ MU_TEST(gasto_precoZero){
 }
 
 MU_TEST(gasto_invalido){
-	mu_assert(isnan(calcularGastos(-15, 2)), "Compras negativas devera retornar NAN");
+	mu_assert(isnan(calcularGastos(-15, 2)), "Gastos negativos devera retornar NAN");
 }
 
 //Calcular Venda//
